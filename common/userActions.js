@@ -1,0 +1,49 @@
+export async function Encurtar(linkOriginal) {
+    const API_URL = "https://localhost:7114/api/v1";
+
+    const response = await fetch(`${API_URL}`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json; charset=utf-8",
+        },
+        body: JSON.stringify(linkOriginal)
+    })
+    .then((res) => res.json())
+    .catch((erro) => toastr.error(erro))
+    
+    console.log(response);
+
+    if(response.erro){
+        toastr.error(mensagem)
+        return "";
+    }
+
+    $("#linkEncurtado").html(`Link encurtado: <a href="${response.linkEncurtado}">${response.linkEncurtado}</a>`).css("display", "block");
+    $("#linkOriginal").html(`Link original: <a href="${linkOriginal}">${linkOriginal}</a>`).css("display", "block");
+    $("#encurtadorLink").val("");
+
+    return response.linkEncurtado;
+}
+
+export async function Redirecionar(tickCode){
+    const API_URL = "https://localhost:7114/api/v1";
+
+    const response = await fetch(`${API_URL}?code=${tickCode}`, {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json; charset=utf-8",
+        },
+    })
+    .then((res) => res.json())
+    .catch((erro) => toastr.error(erro))
+
+    if(response.erro){
+        toastr.error(mensagem)
+        var origin = location.origin;
+        location.href = `${origin}/index.html`;
+    }else{
+        location.href = response.linkOriginal;
+    }
+
+
+}

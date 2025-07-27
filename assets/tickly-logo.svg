@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1080" height="300" viewBox="0 0 1080 300" xml:space="preserve">
+<desc>Created with Fabric.js 5.2.4</desc>
+<defs>
+</defs>
+<rect x="0" y="0" width="100%" height="100%" fill="transparent"></rect>
+<g transform="matrix(1 0 0 1 540 150)" id="b97f28b5-4895-4828-a123-5c6d55cdbd2d"  >
+<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; visibility: hidden;" vector-effect="non-scaling-stroke"  x="-540" y="-150" rx="0" ry="0" width="1080" height="300" />
+</g>
+<g transform="matrix(Infinity NaN NaN Infinity 0 0)" id="6ff60317-d2cc-4a88-a726-00f675b5ea8f"  >
+</g>
+<g transform="matrix(21.42 0 0 21.42 1080 4627.58)" style="filter: url(#SVGID_104);" id="77f7fbb5-2ef2-4bc3-8926-8c5f0761459e"  >
+<filter id="SVGID_104" y="-33%" height="166%" x="-22%" width="144%" >
+	<feGaussianBlur in="SourceAlpha" stdDeviation="8"></feGaussianBlur>
+	<feOffset dx="0" dy="0" result="oBlur" ></feOffset>
+	<feFlood flood-color="rgb(0,0,0)" flood-opacity="1"/>
+	<feComposite in2="oBlur" operator="in" />
+	<feMerge>
+		<feMergeNode></feMergeNode>
+		<feMergeNode in="SourceGraphic"></feMergeNode>
+	</feMerge>
+</filter>
+		<text xml:space="preserve" font-family="Raleway" font-size="105" font-style="normal" font-weight="900" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-153.91" y="32.98" >Tickly</tspan></text>
+</g>
+<g transform="matrix(NaN NaN NaN NaN 0 0)"  >
+<g style=""   >
+</g>
+</g>
+<g transform="matrix(0.6 0 0 0.6 -2601.31 -5262.84)" style="" id="645d3ca6-a4fc-4ebc-bf4b-74164602075f"  >
+		<text xml:space="preserve" font-family="Raleway" font-size="105" font-style="normal" font-weight="900" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-217.82" y="32.98" >Heading</tspan></text>
+</g>
+<g transform="matrix(3 0 0 3 540 150)" style="filter: url(#SVGID_210);" id="e1b11946-8fef-4133-b2e5-1a1ab20d3340"  >
+<filter id="SVGID_210" y="-28%" height="156%" x="-21%" width="142%" >
+	<feGaussianBlur in="SourceAlpha" stdDeviation="3"></feGaussianBlur>
+	<feOffset dx="2" dy="2" result="oBlur" ></feOffset>
+	<feFlood flood-color="rgb(0,0,0)" flood-opacity="1"/>
+	<feComposite in2="oBlur" operator="in" />
+	<feMerge>
+		<feMergeNode></feMergeNode>
+		<feMergeNode in="SourceGraphic"></feMergeNode>
+	</feMerge>
+</filter>
+		<text xml:space="preserve" font-family="Raleway" font-size="86" font-style="normal" font-weight="900" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-126.06" y="27.02" >Tickly</tspan></text>
+</g>
+</svg>

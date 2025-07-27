@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encurtador de Link</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row containerRow">
+            <section id="header">
+                <div class="col-12 w-100">
+                <div class="headerContainer">
+                    <div class="imageContainer">
+                        <img id="ticklyLogo" src="assets/tickly-logo.svg" alt="">
+                    </div>
+
+                    <div class="redirectsContainer">
+                        <ul>
+                            <li class="redirectItem">Encurte seu link</li>
+                            <li class="redirectItem aboutUs">Sobre nós</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </section>
+            <section id="encurtador" class="normalBackground">
+                <div class="col-12 w-100">
+                    <div class="encurtadorContainer">
+                        <div class="encurtadorItens">
+                            <label for="encurtadorLink">Cole aqui o link a ser encurtado</label>
+                            <div class="encurtadorActions">
+                                <input type="text" name="encurtadorLink" id="encurtadorLink" placeholder="Exemplo: youtube.com/exemplo">
+                                <span></span>
+                                <div id="encurtarBtn">
+                                    <i class="bi bi-send"></i>
+                                </div>
+                            </div>
+                            <p id="linkOriginal" style="display: none; color: white;"></p>
+                            <p id="linkEncurtado" style="display: none; color: white;"></p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
