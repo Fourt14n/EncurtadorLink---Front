@@ -1,5 +1,5 @@
 export async function Encurtar(linkOriginal) {
-    const API_URL = "https://localhost:7114/api/v1";
+    const API_URL = "https://encurtalinkapi-eaa6f7efb7cqgceq.canadacentral-01.azurewebsites.net/api/v1";
 
     const response = await fetch(`${API_URL}`, {
         method: "POST",
@@ -26,7 +26,7 @@ export async function Encurtar(linkOriginal) {
 }
 
 export async function Redirecionar(tickCode){
-    const API_URL = "https://localhost:7114/api/v1";
+    const API_URL = "https://encurtalinkapi-eaa6f7efb7cqgceq.canadacentral-01.azurewebsites.net/api/v1";
 
     const response = await fetch(`${API_URL}?code=${tickCode}`, {
         method: "GET",
