@@ -1,0 +1,26 @@
+{
+  "routes": [
+    {
+      "route": "/index.html",
+      "methods": [
+        "get"
+      ],
+      "statusCode": 200
+    },
+    {
+      "route": "/*",
+      "redirect": "/redirect.js",
+      "statusCode": 200
+    },
+    {
+      "navigationFallback": {
+        "rewrite": "/redirect.js"
+      },
+      "responseOverrides": {
+        "404": {
+          "rewrite": "/redirect.js"
+        }
+      }
+    }
+  ]
+}
