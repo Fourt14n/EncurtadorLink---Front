@@ -9,16 +9,6 @@
     {
       "route": "/*",
       "redirect": "/redirect.js"
-    },
-    {
-      "navigationFallback": {
-        "rewrite": "/redirect.js"
-      },
-      "responseOverrides": {
-        "404": {
-          "rewrite": "/redirect.js"
-        }
-      }
     }
   ]
 }
