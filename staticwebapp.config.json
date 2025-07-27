@@ -4,8 +4,7 @@
       "route": "/index.html",
       "methods": [
         "get"
-      ],
-      "statusCode": 200
+      ]
     },
     {
       "route": "/*",
