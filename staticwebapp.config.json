@@ -8,8 +8,7 @@
     },
     {
       "route": "/*",
-      "redirect": "/redirect.js",
-      "statusCode": 404
+      "redirect": "/redirect.js"
     },
     {
       "navigationFallback": {
