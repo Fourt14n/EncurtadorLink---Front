@@ -6,6 +6,11 @@
         "get"
       ],
       "statusCode": 200
+    },
+    {
+      "route": "/*",
+      "redirect": "/redirect.js",
+      "statusCode": 200
     }
   ]
 }
