@@ -1,14 +1,8 @@
 {
-  "routes": [
-    {
-      "route": "/index.html",
-      "methods": [
-        "get"
-      ]
-    },
-    {
-      "route": "/*",
-      "serve": "/redirect.html"
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/redirect.html",
+      "statusCode": 404
     }
-  ]
+  }
 }
