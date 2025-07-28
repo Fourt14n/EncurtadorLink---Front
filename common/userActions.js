@@ -18,8 +18,8 @@ export async function Encurtar(linkOriginal) {
         return "";
     }
 
-    $("#linkEncurtado").html(`Link encurtado: <a href="${response.linkEncurtado}">${response.linkEncurtado}</a>`).css("display", "block");
-    $("#linkOriginal").html(`Link original: <a href="${linkOriginal}">${linkOriginal}</a>`).css("display", "block");
+    $("#linkEncurtado").html(`Link encurtado: <a target="_blank" href="${response.linkEncurtado}">${response.linkEncurtado}</a>`).css("display", "block");
+    $("#linkOriginal").html(`Link original: <a target="_blank" href="${linkOriginal}">${linkOriginal}</a>`).css("display", "block");
     $("#encurtadorLink").val("");
 
     return response.linkEncurtado;
