@@ -1,8 +1,13 @@
 {
-  "responseOverrides": {
-    "404": {
+  "routes": [
+    {
+      "route": "/index.html",
+      "serve": "/index.html"
+    },
+    {
+      "route": "/*",
       "serve": "/common/redirect.html",
       "statusCode": 200
     }
-  }
+  ]
 }
