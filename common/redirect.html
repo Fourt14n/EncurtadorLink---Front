@@ -1,13 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecionamento</title>
+    <title>Redirecionando...</title>
 </head>
+
 <body>
     <noscript>Habilite o javascript do seu navegador para ser redirecionado</noscript>
 
-    <script type="module" src="/redirect.js"></script>
+    <script>
+        async function Redirecionar(tickCode) {
+            const API_URL = "https://encurtalinkapi-eaa6f7efb7cqgceq.canadacentral-01.azurewebsites.net/api/v1";
+
+            const response = await fetch(`${API_URL}?code=${tickCode}`, {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json; charset=utf-8",
+                },
+            })
+                .then((res) => res.json())
+                .catch((erro) => toastr.error(erro))
+
+            if (response.erro) {
+                toastr.error(mensagem)
+                var origin = location.origin;
+                location.href = `${origin}/index.html`;
+            } else {
+                location.href = response.linkOriginal;
+            }
+
+
+        }
+        var code = location.pathname.replace("/", "");
+        console.log(code);
+        await Redirecionar(code);
+    </script>
 </body>
+
 </html>

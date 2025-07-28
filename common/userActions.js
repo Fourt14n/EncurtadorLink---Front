@@ -24,26 +24,3 @@ export async function Encurtar(linkOriginal) {
 
     return response.linkEncurtado;
 }
-
-export async function Redirecionar(tickCode){
-    const API_URL = "https://encurtalinkapi-eaa6f7efb7cqgceq.canadacentral-01.azurewebsites.net/api/v1";
-
-    const response = await fetch(`${API_URL}?code=${tickCode}`, {
-        method: "GET",
-        headers: {
-            "Content-Type": "application/json; charset=utf-8",
-        },
-    })
-    .then((res) => res.json())
-    .catch((erro) => toastr.error(erro))
-
-    if(response.erro){
-        toastr.error(mensagem)
-        var origin = location.origin;
-        location.href = `${origin}/index.html`;
-    }else{
-        location.href = response.linkOriginal;
-    }
-
-
-}
