@@ -1,8 +1,5 @@
 {
-  "responseOverrides": {
-    "404": {
-      "serve": "/common/redirect.html",
-      "statusCode": 200
-    }
+  "navigationFallback": {
+    "rewrite": "/common/redirect.html",
   }
 }
